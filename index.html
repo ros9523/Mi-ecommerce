@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Ecommerce</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontello.css">
+    <link rel="stylesheet" href="./mas iconos/fontello.css">
+
+    
+</head>
+<body>
+
+<main id="identify"> 
+    
+    <div class="load" id="load">
+ 
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" fill="red" class="nav__logo-icon">
+                        <g>
+                        <g>
+                                  <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> -->
+                                  <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                                  </path>
+                                </g>
+                              </g>
+       </svg>
+    </div>
+        
+    <div class="cart" id="cart">
+        
+        <div class=" icon-cancel" id="icon_cancel"></div>
+        <h2 class="cart__title-center">My cart</h2>
+    </div>
+
+    <div class="section_header">
+    
+        <nav class="nav container">
+    
+            <a class="nav_logo" href="#">
+                 <svg class="nav__logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav__logo-icon">
+                <title>Academlo Logo</title>
+                <g>
+                <g>
+                <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> -->
+                <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                </path></g>
+                </g>
+                </svg>Store 
+            </a>              
+          
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                      <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                      </li>
+                      
+                      <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                      </li>    
+                </ul>
+    
+                <div class="icon_cancel"></div>
+            </div>
+    
+            <div class="buttons">
+
+                <div class="icon-sun-1" id="sun_button"></div>
+
+                <div class="icon-moon-1" id="dark_option"></div>
+
+                <div class="icon-shopping-bag" id="bag">
+                    <span  class="cart_button"id="cart_counter">0              
+                    </span>
+                    
+                   
+                </div>
+                
+                <div class="icon-th-large-outline" id="nav_display"></div>
+                
+            </div>
+        </nav>
+
+    </div>
+ 
+    <div class="section home" id="home">
+
+        <div class="container_home container">
+            
+            <div class="home_image">
+                <img src="./img/featured2.png" alt="shirt">
+            </div>
+
+            <div class="home_data">  
+                <h1 class="home_title">New Sweatshirts <br>COLLECTIONS 2022</h1>
+                <p class="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <span class="home_price">$14.00</span>
+                <div class="home_btns">
+                    <div class="box_discover">
+                        <a href="#" class="discover">Discover</a>
+                    </div>  
+                    <button class="home_button">ADD TO CART</button>
+                </div>        
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section products" id="products">
+        <div class="container_products container">
+
+            <ul class="options">
+                <li data-filter="all" class="items_option">
+                    <h3 class="item_title">Show All</h3>
+                    <span class="item_stock">show all products</span>
+                </li>
+                <li data-filter= ".Hoodies" class="items_option">
+                    <h3  class="item_title">Hoodies</h3>
+                    <span class="item_stock">3 products</span>
+                </li>
+                <li data-filter= ".Shirts" class="items_option">
+                    <h3  class="item_title">Shirts</h3>
+                    <span class="item_stock">4 products</span>
+                </li>
+                <li data-filter=".Sweatshirts"  class="items_option">
+                    <h3 class="item_title">Sweatshirts</h3>
+                    <span class="item_stock">4 products</span>
+                </li>
+            </ul>
+
+            <div class="products_list">
+
+                <div class="articles Hoodies  ">
+                    <div class="article_image">
+                        <img src="./img/featured1.png" alt="Hoodies">
+                    </div>
+                    <div class="article_data" data-id="1">
+                        <button class="icon-plus button_products"></button>
+                        <h3 class="article_price">$14.00 <span class="article_stock">| stock:10</span></h3>
+                        <h4 class="article_name">Hoddies</h4>
+             
+                    </div>
+                
+                </div>
+
+                <div class="articles Shirts ">
+                    <div class="article_image">
+                        <img src="./img/featured2.png" alt="Shirts">
+                    </div>
+                    <div class="article_data" data-id="2">
+                        <button class="icon-plus button_products"></button>
+                        <h3 class="article_price">$24.00 <span class="article_stock">| stock:15</span></h3>
+                        <h4 class="article_name">Shirts</h4>
+                       
+                    </div>
+                </div>
+
+                <div class="articles Sweatshirts ">
+                    <div class="article_image">
+                        <img src="./img/featured3.png" alt="Sweatshirts">
+                    </div>
+                    <div class="article_data" data-id="3">
+                        <button class="icon-plus button_products"></button>
+                        <h3 class="article_price">$24.00 <span class="article_stock">| stock:20</span></h3>
+                        <h4 class="article_name">Sweatshirts</h4>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section footer">
+        <div class="container_footer container">
+
+            <div class="information_footer">
+                <h3 class="footer_title">Our Information</h3>
+                <ul class="footer_list">
+                    <li class="footer_text">Toluca-Mexico</li> 
+                </ul>
+            </div>
+
+            <div class="information_footer">
+                <h3 class="footer_title">About Us</h3>
+                <ul class="footer_list">
+                    <li class="footer_text"><a href=# class="footer_link"></a>Support Center</li> 
+                    <li class="footer_text"><a href=# class="footer_link"></a>Customer Support</li> 
+                    <li class="footer_text"><a href=# class="footer_link"></a>About Us</li class="footer_text"> 
+                    <li class="footer_text"><a href=# class="footer_link"></a>Copy Right</li> 
+                </ul>
+            </div>
+
+            <div class="information_footer">
+                <h3 class="footer_title">Product</h3>
+                <ul class="footer_list">
+                    <li class="footer_text"><a href=# class="footer_link"></a>Hoodies</li> 
+                    <li class="footer_text"><a href=# class="footer_link"></a>Shirts</li> 
+                    <li class="footer_text" ><a href=# class="footer_link"></a>Sweatshirts</li> 
+                </ul>
+            </div>
+
+            <div class="information_footer">
+                <h3 class="footer_title">Social</h3>
+                <ul class="footer_social">
+                    <li><a class="icon-facebook-rect" href="https://facebook.com" target="_blank" class="footer_social-links"></a></li> 
+                    <li><a class="icon-twitter" href="https://twitter.com" target="_blank" class="footer_social-links"></a></li> 
+                    <li><a class="icon-instagram" href="https://instagram.com" target="_blank" class="footer_social-links"></a></li>  
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+ 
+</main>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    mixitup('.products_list', {
+    selectors: {
+      target: '.articles'
+    },
+    animation: {
+      duration: 300
+    }
+  }).filter('all')
+</script>
+<script src="./main.js"></script>
+
+
+</body>
+</html>
